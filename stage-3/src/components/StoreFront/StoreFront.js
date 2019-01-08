@@ -9,7 +9,7 @@ class StoreFront extends Component {
     }
 
     render() {
-        let productDisplay = this.props.products.map((element, index) => {
+        let productDisplay = this.props.products&&this.props.products.map((element, index) => {
             return (
                 <div className="product-container" key={index}>
                     <h2>{element.title}</h2>
